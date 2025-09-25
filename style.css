@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: munro;
-    src: url(/munro/munro.ttf);
+    src: url(munro/munro.ttf);
 }
 *{
     font-family: munro;
