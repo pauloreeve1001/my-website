@@ -2,6 +2,8 @@ let homeButton = document.querySelector('.home');
 let menuButton = document.querySelector('.menu');
 let menuDropdown = document.querySelector('.menuDropdown');
 let about = document.querySelector('#about');
+let gallery_title = document.querySelector('.gallery-title');
+let gallery_container = document.querySelector('.gallery-container');
 let clickCount = 0;
 menuDropdown.style.display = "none";
 
@@ -25,7 +27,7 @@ function clickMessage()
 
 homeButton.onclick = function()
 {
-    // clickMessage();
+    window.location.href = 'index.html'; 
 };
 
 menuButton.onclick = function()
@@ -44,4 +46,16 @@ menuButton.onclick = function()
 about.onclick = function()
 {
     window.location.href = 'about.html';
+}
+
+gallery_title.onclick = function()
+{
+    if (gallery_container.style.display == "none")
+    {
+        gallery_container.style.display = "grid";
+    }
+    else
+    {
+        gallery_container.style.display = "none";
+    }
 }

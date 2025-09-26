@@ -77,6 +77,34 @@ body{
     font-size: 1.1rem;
 }
 
+/* HOME PAGE */
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-title{
+    font-size: 1rem;
+    background-color: rgb(255, 243, 216);
+    margin: 1rem;
+}
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    place-items: center;
+}
+
+.gallery-image{
+    height: 40vh;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: .11rem solid rgb(0, 0, 0);
+    display: block;
+}
+
 
 /* ABOUT PAGE */
 
@@ -93,6 +121,24 @@ body{
     border-radius: 0.5rem;
     margin: 2rem 2rem;
     border: 2px solid black;
+}
+
+
+.profile-info{
+    margin: 2rem 2rem;
+}
+
+.thin-text {
+  font-weight: 500;
+}
+
+.about-text{
+    margin-top: 3rem;
+}
+
+.facebook{
+    color: brown;
+    text-decoration: none;
 }
 
 @media (max-width: 600px) {
@@ -120,6 +166,12 @@ body{
     #welcome{
         font-size: 1.2rem;
     }
+    .gallery-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
     /* ABOUT PAGE */
     
@@ -134,22 +186,3 @@ body{
     font-size: 1.9rem
     }
 }
-
-
-.profile-info{
-    margin: 2rem 2rem;
-}
-
-.thin-text {
-  font-weight: 500;
-}
-
-.about-text{
-    margin-top: 3rem;
-}
-
-.facebook{
-    color: brown;
-    text-decoration: none;
-}
-
